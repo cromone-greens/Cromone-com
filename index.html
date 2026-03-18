@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cromone Greens – Solar Accessories</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="index.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="cromone.css">
 </head>
+
+<script>
+  function login() {
+    try {
+      window.location.href = 'login.html'
+    } catch (error) {
+      alert('Something went wrong. Try Again!')
+    }
+  }
+  function signup() {
+    try {
+      window.location.href = 'signup.html'
+    } catch (error) {
+      alert('Something went wrong. Try Again!')
+    }
+  }
+
+  
+
+  
+</script>
+
 <body>
 
-<!-- ── NAV ── -->
-<nav>
+  <!-- ── NAV ── -->
+  <nav>
     <a class="nav-logo" href="#">
-      <div class="logo-icon">☀</div>
-      Cromone <span class="green">&nbsp;Greens</span>
+      <img src="/images/Cromone_Logo.png" alt="Cromone Greens Logo" class="logo-img">
     </a>
     <ul class="nav-links">
       <li><a href="#products">Products</a></li>
@@ -22,29 +46,39 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-auth">
-      <button id="btn-login" onclick="alert('Coming Soon')">Login</button>
-      <button id="btn-signup" onclick="alert('Coming Soon')">Sign Up</button>
+      <button id="btn-login" onclick="alert('page on construction')">Login</button>
+      <button id="btn-signup" onclick="alert('page on construction')">Sign Up</button>
     </div>
   </nav>
-   
+
   <!-- ── HERO ── -->
   <section class="hero">
     <div class="hero-content">
       <div class="hero-badge">⚡ Solar Accessories Specialists</div>
-      <h1>Power Your <span class="sun-word">Solar</span><br/>Setup the <span class="accent">Right Way</span></h1>
-      <p>Premium solar accessories — ACDB-DCDB combos, DC & AC wires, earthing solutions, and more. Trusted brands. Reliable protection. Built for Indian solar installations.</p>
+      <h1>Power Your <span class="sun-word">Solar</span><br />Setup the <span class="accent">Right Way</span></h1>
+      <p>Premium solar accessories — ACDB-DCDB combos, DC & AC wires, earthing solutions, and more. Trusted brands.
+        Reliable protection. Built for Indian solar installations.</p>
       <div class="hero-btns">
         <a class="btn-primary" href="#products">Browse Products</a>
         <a class="btn-secondary" href="#contact">Request a Quote</a>
       </div>
       <div class="hero-stats">
-        <div class="hero-stat"><div class="num">7</div><div class="label">ACDB-DCDB Combos</div></div>
-        <div class="hero-stat"><div class="num">5+</div><div class="label">Trusted Brands</div></div>
-        <div class="hero-stat"><div class="num">30+</div><div class="label">Product Variants</div></div>
+        <div class="hero-stat">
+          <div class="num">7</div>
+          <div class="label">ACDB-DCDB Combos</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">5+</div>
+          <div class="label">Trusted Brands</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">30+</div>
+          <div class="label">Product Variants</div>
+        </div>
       </div>
     </div>
   </section>
-   
+
   <!-- ── CATEGORY STRIP ── -->
   <div class="categories-strip" id="catStrip">
     <button class="cat-tab active" data-cat="all">All Products</button>
@@ -54,18 +88,21 @@
     <button class="cat-tab" data-cat="earth-wire">Earthing Wire</button>
     <button class="cat-tab" data-cat="other">Other Accessories</button>
   </div>
-   
+
   <!-- ── PRODUCTS ── -->
   <section id="products">
     <div class="section-label">Our Range</div>
     <h2 class="section-title">Solar Accessories</h2>
-    <p class="section-sub">Everything your solar installation needs — quality components from top brands, handpicked for performance and reliability.</p>
-   
+    <p class="section-sub">Everything your solar installation needs — quality components from top brands, handpicked for
+      performance and reliability.</p>
+
     <div class="products-grid" id="productsGrid">
-   
+
       <!-- ACDB-DCDB COMBOS -->
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/STD_COMBO-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Standard (STD) Combo</div>
@@ -73,9 +110,11 @@
           <span class="product-brand">Sibass</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/ELITE_COMBO-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Elite Combo</div>
@@ -83,9 +122,11 @@
           <span class="product-brand">Sibass + Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/ELITE_PLUS_COMBO-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Elite Plus Combo</div>
@@ -93,9 +134,11 @@
           <span class="product-brand">Sibass + Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/PRIME_COMBO-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Prime Combo</div>
@@ -103,9 +146,11 @@
           <span class="product-brand">Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/PRIME_PLUS_COMBO-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Prime Plus Combo</div>
@@ -113,9 +158,11 @@
           <span class="product-brand">Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/Apex-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Apex Combo</div>
@@ -123,9 +170,11 @@
           <span class="product-brand">Surge-On + Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="acdb">
-        <div class="product-img"><div class="img-placeholder">📦</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/ACDB-DCDB/Apex_plus-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">ACDB-DCDB Combo</div>
           <div class="product-name">Apex Plus Combo</div>
@@ -133,10 +182,12 @@
           <span class="product-brand">Surge-On + Havells</span>
         </div>
       </div>
-   
+
       <!-- SOLAR DC WIRE -->
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Cromcab DC wire mm.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 4 sq.mm</div>
@@ -144,9 +195,11 @@
           <span class="product-brand">Cromcab</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Wires/Cromcab_DC_wire_mm-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 4 sq.mm</div>
@@ -154,9 +207,11 @@
           <span class="product-brand">KEI</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/HPL_Solar DC 4mm.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 4 sq.mm</div>
@@ -164,9 +219,11 @@
           <span class="product-brand">HPL</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Havells_Solar_DC.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 4 sq.mm</div>
@@ -174,19 +231,11 @@
           <span class="product-brand">Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
-        <div class="product-body">
-          <div class="product-category">Solar DC Wire</div>
-          <div class="product-name">DC Wire 4 sq.mm</div>
-          <div class="product-desc">Solar-grade DC cable, 4 sq.mm cross-section</div>
-          <span class="product-brand">Orient Cables</span>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
         </div>
-      </div>
-   
-      <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 6 sq.mm</div>
@@ -194,9 +243,11 @@
           <span class="product-brand">Cromcab</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 6 sq.mm</div>
@@ -204,9 +255,11 @@
           <span class="product-brand">KEI</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 6 sq.mm</div>
@@ -214,9 +267,11 @@
           <span class="product-brand">HPL</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 6 sq.mm</div>
@@ -224,9 +279,11 @@
           <span class="product-brand">Havells</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="dc-wire">
-        <div class="product-img"><div class="img-placeholder">🔌</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar DC Wire</div>
           <div class="product-name">DC Wire 6 sq.mm</div>
@@ -234,10 +291,12 @@
           <span class="product-brand">Orient Cables</span>
         </div>
       </div>
-   
+
       <!-- SOLAR AC WIRE -->
       <div class="product-card reveal" data-cat="ac-wire">
-        <div class="product-img"><div class="img-placeholder">⚡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Wires/CROMCAB_AC_WIRE-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar AC Wire</div>
           <div class="product-name">AC Wire 2.5 sq.mm</div>
@@ -245,9 +304,11 @@
           <span class="product-brand">Cromcab</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="ac-wire">
-        <div class="product-img"><div class="img-placeholder">⚡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Wires/CROMCAB_AC_WIRE-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar AC Wire</div>
           <div class="product-name">AC Wire 4 sq.mm</div>
@@ -255,9 +316,11 @@
           <span class="product-brand">Cromcab</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="ac-wire">
-        <div class="product-img"><div class="img-placeholder">⚡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar AC Wire</div>
           <div class="product-name">AC Wire 2.5 sq.mm</div>
@@ -265,9 +328,11 @@
           <span class="product-brand">KEI</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="ac-wire">
-        <div class="product-img"><div class="img-placeholder">⚡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar AC Wire</div>
           <div class="product-name">AC Wire 4 sq.mm</div>
@@ -275,9 +340,11 @@
           <span class="product-brand">KEI</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="ac-wire">
-        <div class="product-img"><div class="img-placeholder">⚡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar AC Wire</div>
           <div class="product-name">AC Wire 4 sq.mm</div>
@@ -285,10 +352,12 @@
           <span class="product-brand">HPL</span>
         </div>
       </div>
-   
+
       <!-- EARTHING WIRE -->
       <div class="product-card reveal" data-cat="earth-wire">
-        <div class="product-img"><div class="img-placeholder">🌿</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Wires/CROMCAB_EARTHING_WIRE-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar Earthing Wire</div>
           <div class="product-name">Aluminium Wire 6 sq.mm</div>
@@ -296,9 +365,11 @@
           <span class="product-brand">Aluminium</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="earth-wire">
-        <div class="product-img"><div class="img-placeholder">🌿</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Wires/CROMCAB_EARTHING_WIRE-2-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar Earthing Wire</div>
           <div class="product-name">Aluminium Wire 10 sq.mm</div>
@@ -306,9 +377,11 @@
           <span class="product-brand">Aluminium</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="earth-wire">
-        <div class="product-img"><div class="img-placeholder">🌿</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Wires/CROMCAB_EARTHING_WIRE-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar Earthing Wire</div>
           <div class="product-name">Aluminium Wire 16 sq.mm</div>
@@ -316,9 +389,11 @@
           <span class="product-brand">Aluminium</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="earth-wire">
-        <div class="product-img"><div class="img-placeholder">🌿</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar Earthing Wire</div>
           <div class="product-name">CCA Wire 4 sq.mm</div>
@@ -326,9 +401,11 @@
           <span class="product-brand">CCA</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="earth-wire">
-        <div class="product-img"><div class="img-placeholder">🌿</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar Earthing Wire</div>
           <div class="product-name">CCA Wire 6 sq.mm</div>
@@ -336,9 +413,11 @@
           <span class="product-brand">CCA</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="earth-wire">
-        <div class="product-img"><div class="img-placeholder">🌿</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="images/product1.jpg" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Solar Earthing Wire</div>
           <div class="product-name">CCA Wire 10 sq.mm</div>
@@ -346,10 +425,12 @@
           <span class="product-brand">CCA</span>
         </div>
       </div>
-   
+
       <!-- OTHER ACCESSORIES -->
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🔩</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/cbr.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">CBR – 1 MTR, 14.2mm</div>
@@ -357,9 +438,11 @@
           <span class="product-brand">1 MTR · 14.2mm</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🔩</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/cbr.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">CBR – 1 MTR, 17.2mm</div>
@@ -367,9 +450,11 @@
           <span class="product-brand">1 MTR · 17.2mm</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🔩</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/cbr.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">CBR – 1.5 MTR, 14.2mm</div>
@@ -377,9 +462,11 @@
           <span class="product-brand">1.5 MTR · 14.2mm</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🔩</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/cbr.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">CBR – 2 MTR, 14.2mm</div>
@@ -387,51 +474,60 @@
           <span class="product-brand">2 MTR · 14.2mm</span>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🛢</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/EARTHING_CHEMICAL_BAG-removebg-preview.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">Earthing Chemical Bag</div>
           <div class="product-desc">Earthing compound for low-resistance grounding</div>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🛡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/cbr.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">Earthing Pit Cover</div>
           <div class="product-desc">Protective cover for earthing pit installations</div>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">⚡</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/LA.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
           <div class="product-name">Lightning Arrester (LA)</div>
           <div class="product-desc">Protection against lightning surge for solar installations</div>
         </div>
       </div>
-   
+
       <div class="product-card reveal" data-cat="other">
-        <div class="product-img"><div class="img-placeholder">🔲</div><span class="img-label">Photo coming soon</span></div>
+        <div class="product-img">
+          <img src="/images/Accessories/Base Plate.png" alt="Product Image">
+        </div>
         <div class="product-body">
           <div class="product-category">Other Accessories</div>
-          <div class="product-name">Base Plate</div>
+          <div class="product-name">Base Plate (80x40) 3mm</div>
           <div class="product-desc">Mounting base plate for solar accessories</div>
         </div>
       </div>
-   
+
     </div>
   </section>
-   
+
   <!-- ── WHY US ── -->
   <section id="why">
     <div class="section-label">Why Choose Us</div>
     <h2 class="section-title">Built for Solar Professionals</h2>
-    <p class="section-sub">We source only from trusted brands, ensuring every component meets the demands of real-world solar installations.</p>
+    <p class="section-sub">We source only from trusted brands, ensuring every component meets the demands of real-world
+      solar installations.</p>
     <div class="why-grid">
       <div class="why-card reveal">
         <div class="why-icon">🏆</div>
@@ -455,7 +551,7 @@
       </div>
     </div>
   </section>
-   
+
   <!-- ── BRANDS ── -->
   <section id="brands" style="padding: 50px 48px;">
     <div style="text-align:center; margin-bottom: 32px;">
@@ -463,46 +559,60 @@
       <h2 class="section-title" style="margin-bottom:0;">Trusted by the Industry</h2>
     </div>
     <div class="brands-row">
-      <div class="brand-chip">Havells</div>
-      <div class="brand-chip">Sibass</div>
-      <div class="brand-chip">Surge-On</div>
-      <div class="brand-chip">Cromcab</div>
+      <div class="brand-chip">HAVELLS</div>
+      <div class="brand-chip">SIBASS</div>
+      <div class="brand-chip">SURGE-ON</div>
+      <div class="brand-chip">CROMCAB</div>
       <div class="brand-chip">KEI</div>
       <div class="brand-chip">HPL</div>
-      <div class="brand-chip">Orient Cables</div>
+      <div class="brand-chip">TMT PLUS</div>
+      <div class="brand-chip">SELEC</div>
     </div>
   </section>
-   
+
+  <!-- ── BRANDS ── -->
+  <section id="brands" style="padding: 50px 48px;">
+    <div style="text-align:center; margin-bottom: 32px;">
+      <div class="section-label" style="justify-content:center;">Our Oficial Distributor</div>
+      <!-- <h2 class="section-title" style="margin-bottom:0;">Trusted by the Industry</h2> -->
+    </div>
+    <div class="brands-row">
+      <div class="brand-chip">ANMOL GREENS</div>
+    </div>
+  </section>
+
   <!-- ── CONTACT ── -->
   <section id="contact">
     <div class="contact-wrapper">
       <div class="contact-info reveal">
         <div class="section-label">Get in Touch</div>
         <h2 class="section-title">Let's Talk Solar</h2>
-        <p>Have a project in mind or need a quote? Reach out to us and our team will get back to you with the best pricing and product recommendations.</p>
+        <p>Have a project in mind or need a quote? Reach out to us and our team will get back to you with the best
+          pricing and product recommendations.</p>
         <div class="contact-item">
           <div class="ci-icon">📍</div>
           <div class="ci-text">
-            <div class="ci-label">Location</div>
-            <div class="ci-value">India</div>
+            <div class="ci-label">Office</div>
+            <div class="ci-value">Ground Floor, 166-A, K-Block, Yashoda Nagar, Kanpur, Uttar Pradesh, India</div>
           </div>
         </div>
         <div class="contact-item">
           <div class="ci-icon">📞</div>
           <div class="ci-text">
-            <div class="ci-label">Phone</div>
-            <div class="ci-value">+91 XXXXX XXXXX</div>
+            <div class="ci-label">Contact Our Team</div>
+            <div class="ci-value">+91-7080401403, 7054106600, 8354011175, 8935035745</div>
           </div>
         </div>
         <div class="contact-item">
           <div class="ci-icon">✉️</div>
           <div class="ci-text">
             <div class="ci-label">Email</div>
-            <div class="ci-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="543d3a323b1437263b393b3a31332631313a277a373b39">[email&#160;protected]</a></div>
+            <div class="ci-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                data-cfemail="543d3a323b1437263b393b3a31332631313a277a373b39">buinsess.cromone@gmail.com</a></div>
           </div>
         </div>
       </div>
-   
+
       <div class="contact-form reveal">
         <h3>Request a Quote</h3>
         <div class="form-group">
@@ -533,13 +643,14 @@
       </div>
     </div>
   </section>
-   
+
   <!-- ── FOOTER ── -->
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
         <div class="fb-logo">☀ Cromone Greens</div>
-        <p>Your trusted partner for solar accessories — quality products from India's leading brands, delivered to your project site.</p>
+        <p>Your trusted partner for solar accessories — quality products from India's leading brands, delivered to your
+          project site.</p>
       </div>
       <div class="footer-links">
         <h4>Products</h4>
@@ -566,38 +677,39 @@
     </div>
   </footer>
 
-<script>
-  // Category filter
-  const tabs = document.querySelectorAll('.cat-tab');
-  const cards = document.querySelectorAll('.product-card');
+  <script>
+    // Category filter
+    const tabs = document.querySelectorAll('.cat-tab');
+    const cards = document.querySelectorAll('.product-card');
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const cat = tab.dataset.cat;
-      cards.forEach(card => {
-        if (cat === 'all' || card.dataset.cat === cat) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const cat = tab.dataset.cat;
+        cards.forEach(card => {
+          if (cat === 'all' || card.dataset.cat === cat) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
-  });
 
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 60);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-  reveals.forEach(el => observer.observe(el));
-</script>
+    reveals.forEach(el => observer.observe(el));
+  </script>
 </body>
+
 </html>
