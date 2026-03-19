@@ -133,9 +133,13 @@ nav {
 
 .hero::before {
   content: '☀';
-  position: absolute; top: -40px; right: -40px;
-  font-size: 340px; opacity: 0.05;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  font-size: 340px;
+  opacity: 0.50;
   animation: spin-slow 60s linear infinite;
+  color: #D4A017
 }
 
 @keyframes spin-slow { to { transform: rotate(360deg); } }
